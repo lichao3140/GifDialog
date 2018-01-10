@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativelayout1">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_118sdp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/gifImageView"
+                    />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout1">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_14sdp"
+                        android:paddingRight="@dimen/_14sdp"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:id="@+id/title"
+                        android:textAlignment="center"
+                        android:text="This is Dialog title"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:paddingRight="@dimen/_14sdp"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:id="@+id/message"
+                        android:text="This is a Dialog Content"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_below="@+id/title"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/message"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:layout_marginTop="@dimen/_27sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="Cancel"
+                            android:textAllCaps="false"
+                            android:id="@+id/negativeBtn"
+                            android:background="@drawable/curved_shape2"
+                            android:textColor="#ffffff"
+                            android:layout_marginRight="@dimen/_13sdp"
+                            android:visibility="gone"
+                            />
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:textAllCaps="false"
+                            android:text="Ok"
+                            android:id="@+id/positiveBtn"
+                            android:background="@drawable/curved_shape"
+                            android:textColor="#ffffff"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
