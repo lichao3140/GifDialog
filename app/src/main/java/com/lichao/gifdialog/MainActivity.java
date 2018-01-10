@@ -51,6 +51,67 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     })
                     .build();
+        } else if(view.getId() == R.id.dialog2){
+            new GifDialog.Builder(MainActivity.this)
+                    .setTitle("Getting Late")
+                    .setMessage("Are you having problem with time.Don't know estimated time to reach.Visit our application,It will help you to get estimate time with distance.")
+                    .setNegativeBtnText("Cancel")
+                    .setPositiveBtnBackground("#22b573")
+                    .setPositiveBtnText("Ok")
+                    .setNegativeBtnBackground("#c1272d")
+                    .setGifResource(R.drawable.gif2)
+                    .isCancellable(true)
+                    .OnPositiveClicked(new GifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .OnNegativeClicked(new GifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            Toast.makeText(MainActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .build();
+        } else if(view.getId() == R.id.dialog3){
+            new GifDialog.Builder(MainActivity.this)
+                    .setTitle("Tour Planning")
+                    .setMessage("Are you planning to go for tour.No need to waste time,Visit our online tour booking website.")
+                    .setNegativeBtnText("Cancel")
+                    .setPositiveBtnBackground("#22b573")
+                    .setPositiveBtnText("Ok")
+                    .setNegativeBtnBackground("#c1272d")
+                    .setGifResource(R.drawable.gif3)
+                    .isCancellable(true)
+                    .OnPositiveClicked(new GifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .OnNegativeClicked(new GifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            Toast.makeText(MainActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .build();
+        } else if(view.getId() == R.id.dialog4){
+            new GifDialog.Builder(MainActivity.this)
+                    .setTitle("Dialog without Gif Supports")
+                    .setMessage("You can use TT Fancy Dialog without gif also.")
+                    .setPositiveBtnBackground("#22b573")
+                    .setPositiveBtnText("Ok")
+                    .setGifResource(R.drawable.png1)
+                    .isCancellable(true)
+                    .OnPositiveClicked(new GifDialogListener() {
+                        @Override
+                        public void OnClick() {
+                            Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .build();
         }
     }
 }
