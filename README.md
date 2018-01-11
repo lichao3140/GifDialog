@@ -10,7 +10,7 @@ Add this to your module's `build.gradle` file:
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.lichao3140:GifDialog:1.0.2'
+	implementation 'com.bestsoft32.tayyab:tt-fancy-gif-dialog:1.0.2'
 }
 ```
 <h2> Gif Dialog</h2>
@@ -63,7 +63,12 @@ new GifDialog.Builder(MainActivity.this)
 
 **Please click the image below to enlarge.**
 
-<img src="https://github.com/tayyabtariq50/TTFancyGifDialog-Android/blob/master/screenshot/screenshot1.gif" height="420" width="240" hspace="20">
-<img src="https://github.com/tayyabtariq50/TTFancyGifDialog-Android/blob/master/screenshot/screenshot2.gif" height="420" width="240" hspace="20">
-<img src="https://github.com/tayyabtariq50/TTFancyGifDialog-Android/blob/master/screenshot/screenshot4.gif" height="420" width="240">
+<img src="https://github.com/lichao3140/GifDialog/blob/master/screenshot/screenshot1.gif" height="420" width="240" hspace="20"><img src="https://github.com/lichao3140/GifDialog/blob/master/screenshot/screenshot2.gif" height="420" width="240" hspace="20"><img src="https://github.com/lichao3140/GifDialog/blob/master/screenshot/screenshot4.gif" height="420" width="240">
+
+## 资料
+存在github的releases上<br>
+http://blog.csdn.net/lib739449500/article/details/55261225<br>
+存到bintray上<br>
+上传到组织 https://www.jianshu.com/p/b5d3462407fc<br>
+上传到个人 https://www.jianshu.com/p/9f81d5b5a451<br>
 
