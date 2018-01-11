@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.lichao.lib.GifDialog;
-import com.lichao.lib.GifDialogListener;
+import com.lichao.mylibrary.GifDialog;
+import com.lichao.mylibrary.GifDialogListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button dialog1,dialog2,dialog3,dialog4;

@@ -1,4 +1,4 @@
-package com.lichao.lib;
+package com.lichao.mylibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.lichao.lib;
+package com.lichao.mylibrary;
 
 import android.app.Activity;
 import android.app.Dialog;

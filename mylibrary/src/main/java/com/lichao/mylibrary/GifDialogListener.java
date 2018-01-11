@@ -1,4 +1,4 @@
-package com.lichao.lib;
+package com.lichao.mylibrary;
 
 /**
  * Created by Administrator on 2018-01-10.

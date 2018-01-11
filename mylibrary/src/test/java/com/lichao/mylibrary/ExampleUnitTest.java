@@ -1,4 +1,4 @@
-package com.lichao.lib;
+package com.lichao.mylibrary;
 
 import org.junit.Test;
 
