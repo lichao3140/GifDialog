@@ -16,7 +16,7 @@ dependencies {
 <h2> Gif Dialog</h2>
 
 ```diff
-new GifDialog.Builder(MainActivity.this)
+new TTFancyGifDialog.Builder(MainActivity.this)
                     .setTitle("Online Shopping")
                     .setMessage("You don't have time for shopping, Visit our website for online shopping with discount price.")
                     .setPositiveBtnText("Ok")
@@ -25,13 +25,13 @@ new GifDialog.Builder(MainActivity.this)
                     .setNegativeBtnBackground("#c1272d")
                     .setGifResource(R.drawable.gif1)      //pass your gif, png or jpg
                     .isCancellable(true)
-                    .OnPositiveClicked(new GifDialogListener() {
+                    .OnPositiveClicked(new TTFancyGifDialogListener() {
                         @Override
                         public void OnClick() {
                             Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
                         }
                     })
-                    .OnNegativeClicked(new GifDialogListener() {
+                    .OnNegativeClicked(new TTFancyGifDialogListener() {
                         @Override
                         public void OnClick() {
                             Toast.makeText(MainActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
@@ -43,14 +43,14 @@ new GifDialog.Builder(MainActivity.this)
 <h2> Gif Dialog Without Negative Button</h2>
 
 ```diff
-new GifDialog.Builder(MainActivity.this)
+new TTFancyGifDialog.Builder(MainActivity.this)
                     .setTitle("Online Shopping")
                     .setMessage("You don't have time for shopping, Visit our website for online shopping with discount price.")
                     .setPositiveBtnText("Ok")
                     .setPositiveBtnBackground("#22b573")
                     .setGifResource(R.drawable.gif1)      //pass your gif, png or jpg
                     .isCancellable(true)
-                    .OnPositiveClicked(new GifDialogListener() {
+                    .OnPositiveClicked(new TTFancyGifDialogListener() {
                         @Override
                         public void OnClick() {
                             Toast.makeText(MainActivity.this,"Ok",Toast.LENGTH_SHORT).show();
